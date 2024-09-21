@@ -1,0 +1,13 @@
+:root {
+    font: 62.5%/18px Arial;
+}
+$myColor: salmon;
+header {
+    background-color: lightblue;
+    h1 {
+        font-size: 3rem;
+    }
+    p {
+        color: $myColor;
+    }
+}
