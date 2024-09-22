@@ -1,13 +1,16 @@
-:root {
-  font: 62.5%/18px Arial;
+.container {
+  width: 800px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(9, 1fr);
+  grid-auto-columns: 1fr;
 }
 
-header {
+.item {
   background-color: lightblue;
 }
-header h1 {
-  font-size: 3rem;
-}
-header p {
-  color: salmon;
+
+.item:nth-child(even) {
+  background-color: salmon;
 }/*# sourceMappingURL=main.css.map */
