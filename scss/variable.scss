@@ -1,0 +1,13 @@
+
+// SASS Variable
+$primary-color: salmon;
+$secondary-color: lightblue;
+$text-color: #aaaaaa;
+
+body {
+    $primary-color: blue !global;
+    background-color: $primary-color;
+}
+h1 {
+    color: $text-color;
+}
