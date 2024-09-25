@@ -1,0 +1,16 @@
+//  Mixin Simple
+@mixin inline-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+        display: inline-block;
+    }
+}
+// Argument / parameter dengan mixin
+@mixin flex-box($direction, $justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}

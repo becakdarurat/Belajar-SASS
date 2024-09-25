@@ -14,6 +14,23 @@ header ul li a {
   color: white;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 600px;
+  height: 400px;
+  background: #eaeaea;
+}
+.container .box {
+  width: 60px;
+  height: 60px;
+  background-color: #bada55;
+  text-align: center;
+  line-height: 60px;
+}
+
 footer ul {
   margin: 0;
   padding: 0;
@@ -29,21 +46,4 @@ footer ul li {
 footer ul li a {
   color: white;
   text-decoration: none;
-}
-
-.container {
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  flex-direction: column-reverse;
-  width: 600px;
-  height: 400px;
-  background: #eaeaea;
-}
-.container .box {
-  width: 60px;
-  height: 60px;
-  background-color: #bada55;
-  text-align: center;
-  line-height: 60px;
 }/*# sourceMappingURL=mixin.css.map */
