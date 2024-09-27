@@ -37,3 +37,27 @@ $dark-text: #ddd;
 .nav {
     @include color-mode(false);
 }
+@mixin triangel($size, $color, $direction) {
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    background-color: transparent;
+    border-style: solid;
+    // lebar border nya 2em, dipotong setengah, biar proposional kita bagi
+    // border-width: $size / 2em;
+    border-width: $size;
+    @if $direction == up {
+        border-bottom-color: $color;
+    } @else if $direction == right {
+        border-left-color: $color;
+    } @else if $direction == down {
+        border-top-color: $color;
+    } @else {
+        border-right-color: $color
+    }
+}
+
+// else if
+.triangle {
+    @include triangel(2em, red, left)
+}

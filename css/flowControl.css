@@ -16,4 +16,14 @@
 .nav {
   background-color: #999;
   color: #ddd;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 2em;
+  border-right-color: red;
 }/*# sourceMappingURL=flowControl.css.map */
