@@ -61,3 +61,55 @@ $dark-text: #ddd;
 .triangle {
     @include triangel(2em, red, left)
 }
+
+// for 
+// .gradient {
+//     $color: salmon;
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+//     @for $i from 1 to 11 {
+//         li:nth-child(#{$i}) {
+//             padding: 4px;
+//             background-color: lighten($color, $i * 2%);
+//         }
+//     }
+// }
+
+// while
+.gradient {
+    $color: blue;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    $i: 1;
+    @while $i < 11 {
+        li:nth-child(#{$i}) {
+            padding: 4px;
+            background-color: lighten($color, $i * 3%);
+        }
+        $i: $i + 1;
+    }
+}
+
+// each
+$social-colors: (
+    youtube: red,
+    gemini: blue,
+    github: #eee,
+    dicoding: #eaea,
+    projectIDX: yellow,
+);
+
+.socials {
+    font-size: 2em;
+    font-family: arial;
+    font-weight: bold;
+    // key dan value di ambil dari map mana
+    @each $social, $color in $social-colors {
+        // kita lakukan interpolasi
+        .#{$social} {
+            color: $color;
+        }
+    }
+}
